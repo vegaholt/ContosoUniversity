@@ -10,6 +10,7 @@ namespace ContosoUniversity.DAL
         public SchoolContext()
             : base("SchoolContext")
         {
+            //this.Configuration.LazyLoadingEnabled = false; //Disable lazy loading before serialization
         }
 
         public DbSet<Course> Courses { get; set; }
